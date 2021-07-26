@@ -33,5 +33,5 @@ Refinement of the platform for photo centers (website, photo editor) updating th
 
 **HOBBIES** <br>
 I love the forest, nature, mountains, hiking, Blues
-concerts and Ilon Mask:)
+concerts and Elon Musk:)
 
