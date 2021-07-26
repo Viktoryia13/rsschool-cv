@@ -1,0 +1,169 @@
+body, h1, h2, ul {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    text-align: center;
+    background-color: #161922;
+    color: #c0c4d6;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #161922;
+}
+
+.container {
+    max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main {
+    background-color: #161922;
+    padding-bottom: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about .bio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1;
+    color: #e10a6f;
+}
+
+.about .content {
+    color: #c0c4d6;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.about img {
+    border: 5px solid #e10a6f;
+    max-height: 360px;
+}
+
+.details {
+    border-left: 2px solid #ccc;
+    padding-left: 15px;
+    color: #666;
+    margin-left: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.details li {
+    padding: 10px 5px;
+    position: relative;
+    font-size: 15.5px;
+    color: #c0c4d6;
+}
+
+.details li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    left: -21px;
+    background-color: #e10a6f;
+}
+
+.details li span {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-wrap: wrap;
+    }
+}
+
+.resume {
+    background-color: #161922;
+}
+
+section h2.h1 {
+    color: #fff;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0px 0 40px;
+    font-weight: bold;
+    padding: 0 10px 10px;
+    position: relative;
+}
+
+section h2.h1 span.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e10a6f;
+}
+
+section h2.h1 span.underline span {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: calc(50% - 9px);
+    background-color: #e10a6f;
+}
+
+section h2.h1 span.underline span.r-square {
+    right: 0px;
+}
+
+section h2.h1 span.underline span.l-square {
+    left: 0px;
+}
+
+.resume-box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    border-top: 5px solid #e10a6f;
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 70px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
