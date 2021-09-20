@@ -7,54 +7,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>CV</title>
 </head>
 
 <body>
     <header>
-        <h1>CV Victoria Balashenko</h1>
+        <nav id="navigation" class="navbar">
+            <div class="container">
+                <div class="navbar-header-mobile">
+                    <h2 class="navbar-brand" href="#profile">CV</h2>
+                    <button class="navbar-toggler collapsed" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <ul class="navbar-nav collapse">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#languages">languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#code">Code</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="container about">
+        <div class="container about" id="profile">
             <figure>
                 <img src="img/vika_balashenko.png" alt="CV Victoria Balashenko">
             </figure>
             <div class="bio">
-                <h3 class="title">Full Stack Developer</h3>
+                <h1 class="title">Full Stack Developer</h1>
+                <p class="content">At the moment in the project I am using backend (php) and frontend (pure js). I have not yet decided in which direction I want to develop, I am ready for any technologies!) The most important thing at work: a good team, the ability to develop, and I would like a code review.</p>
                 <p class="content">I love the forest, nature, mountains, hiking, Blues concerts and Elon Musk:)</p>
                 <ul class="details">
+                    <li><span>name</span> : Victoria Balashenko</li>
                     <li><span>birthday</span> : 13 May 1995</li>
                     <li><span>Location</span> :Minsk</li>
                     <li><span>Phone</span> :375296099245</li>
                     <li><span>Email</span> :viktoryiacoyote@gmail.com</li>
+                    <li><span>Social</span> : <a href="https://vk.com/id47684013">VK</a></li>
                 </ul>
             </div>
         </div>
     </main>
-    <section class="resume">
+    <section class="resume" id="skills">
         <div class="container">
-            <div class="resume-box">
-                <h2 class="h1">
-                    Skills
-                    <span class="underline">
-                        <span class="r-square"></span>
-                        <span class="l-square"></span>
-                    </span>
-                </h2>
-                <ul class="details">
-                    <li><span>PHP</span> OOP, MVC, YII2</li>
-                    <li><span>HTML, CSS</span> (SCSS, SASS)</li>
-                    <li><span>JS, Jquery</span> Vue.js (basic) </li>
-                    <li><span>Git</span></li>
-                    <li><span>Gulp</span></li>
-                </ul>
+            <div class="skill-box">
+                <div class="skill-item border-right bg-gray-dark border-bottom">
+                    <div class="skill-inner">
+                        <i class="icon-Chess"></i>
+                        <span class="title">1. PHP</span>
+                        <span class="pink-line"></span>
+                        <p class="content">MVC, OOP</p>
+                        <p class="content">Frameworks: YII2</p>
+                    </div>
+                </div>
+                <div class="skill-item border-right border-left border-bottom">
+                    <div class="skill-inner">
+                        <i class="icon-Chess"></i>
+                        <span class="title">2. Javascript</span>
+                        <span class="pink-line"></span>
+                        <p class="content">Jquery</p>
+                        <p class="content">Vue.js (basic)</p>
+                    </div>
+                </div>
+                <div class="skill-item bg-gray-dark border-bottom">
+                    <div class="skill-inner">
+                        <i class="icon-Chess"></i>
+                        <span class="title">3. HTML</span>
+                        <span class="pink-line"></span>
+                        <p class="content"></p>
+                    </div>
+                </div>
+                <div class="skill-item border-right">
+                    <div class="skill-inner">
+                        <i class="icon-Chess"></i>
+                        <span class="title">4. CSS</span>
+                        <span class="pink-line"></span>
+                        <p class="content">SASS, SCSS</p>
+                    </div>
+                </div>
+                <div class="skill-item border-right border-left bg-gray-dark">
+                    <div class="skill-inner">
+                        <i class="icon-Chess"></i>
+                        <span class="title">5. Linux</span>
+                        <span class="pink-line"></span>
+                        <p class="content">Console basic commands</p>
+                        <p class="content">Nginx (basic)</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-inner">
+                        <i class="icon-Chess"></i>
+                        <span class="title">6. SQL</span>
+                        <span class="pink-line"></span>
+                        <p class="content">Mysql</p>
+                    </div>
+                </div>
             </div>
-
-
         </div>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="education">
         <div class="container">
             <div class="resume-box">
                 <h2 class="h1">
@@ -70,7 +139,7 @@
             </div>
         </div>
     </section>
-    <section class="resume">
+    <section class="resume" id="languages">
         <div class="container">
             <div class="resume-box">
                 <h2 class="h1">
@@ -88,25 +157,7 @@
         </div>
     </section>
 
-    <section class="resume">
-        <div class="container">
-            <div class="resume-box">
-                <h2 class="h1">
-                    CODE
-                    <span class="underline">
-                        <span class="r-square"></span>
-                        <span class="l-square"></span>
-                    </span>
-                </h2>
-                <ul class="details">
-                    <li><a href="https://viktoryia13.github.io/rsschool-cv/cv">viktoryia13.github.io/rsschool-cv/cv</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="resume">
+    <section class="resume" id="experience">
         <div class="container">
             <div class="resume-box">
                 <h2 class="h1">
@@ -133,18 +184,41 @@
                     <li>
                         <span>Junior Full Stack Developer</span>
                         <h4>12/2020 - …</h4>
-                        <ul class="job-list">
-                            <li>Backend (PHP, YII2)</li>
-                            <li>Frontend (JS, Jquery, Vue.js)</li>
-                            <li>Refinement of the platform for photo centers (website, photo editor) updating the
-                                existing functionality and developing a new one.</li>
-                        </ul>
-
+                    <li>Backend (PHP, YII2)</li>
+                    <li>Frontend (JS, Jquery, Vue.js)</li>
+                    <li>Refinement of the platform for photo centers (website, photo editor) updating the
+                        existing functionality and developing a new one.</li>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <section class="resume" id="code">
+        <div class="container">
+            <div class="resume-box">
+                <h2 class="h1">
+                    CODE
+                    <span class="underline">
+                        <span class="r-square"></span>
+                        <span class="l-square"></span>
+                    </span>
+                </h2>
+                <ul class="details">
+                    <li><a href="https://viktoryia13.github.io/rsschool-cv/cv">viktoryia13.github.io/rsschool-cv/cv</a>
+                    </li>
+                </ul>
+<pre><code class="javascript">
+function explode(s) {
+    return s.toString().split('').map(function(el) {
+        return el = el.repeat(el);
+    }).join('');
+}
+</code></pre>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -157,6 +231,8 @@
         </div>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
