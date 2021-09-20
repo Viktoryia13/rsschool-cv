@@ -243,6 +243,13 @@ main {
     color: var(--light-grey);
 }
 
+@media (max-width: 768px) {
+    .skill-item {
+        width: 100%;
+        height: initial;
+    }
+}
+
 .border-bottom {
     border-bottom-style: dashed !important;
     border-bottom: 1px dashed var(--light-grey); 
